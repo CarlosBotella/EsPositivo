@@ -1,14 +1,42 @@
 //
-//  main.cpp
-//  EsPositivo
+//  EsPositivo.cpp
+//  Programacion
 //
 //  Created by Carlos Botella Navarro on 23/9/21.
 //
 
-#include <iostream>
+/*
+ -------------------------------------------------
+ Datos de entrada: a : Z
+ Datos de salida: B (Boolean)
+ 
+ si a≥0
+ 
+ Devolver verdadero
+ 
+ si no
+ 
+ Devolver falso
+ -------------------------------------------------
+ */
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include <iostream>
+using namespace std;
+
+// -----------------------------------------------
+bool esPositivo(int num){
+    bool comparativo;
+    comparativo = false;
+    if (num >= 0) {comparativo = true;}
+    if (comparativo == true) {cout << "Verdadero";}
+    else {cout << "Falso";}
+    return comparativo;
+}
+// -----------------------------------------------
+
+int main(){
+    int numero;
+    cout << "Elige un número: ";
+    cin >> numero;
+    esPositivo(numero);
 }
