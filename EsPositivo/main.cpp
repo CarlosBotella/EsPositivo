@@ -35,8 +35,12 @@ bool esPositivo(int num){
 // -----------------------------------------------
 
 int main(){
-    int numero;
-    cout << "Elige un número: ";
-    cin >> numero;
-    esPositivo(numero);
+//    int numero;
+//    cout << "Elige un número: ";
+//    cin >> numero;
+    if (esPositivo(4)){
+        cout << "todo correcto";
+    } else {
+        cout << "hay un error";
+    }
 }
